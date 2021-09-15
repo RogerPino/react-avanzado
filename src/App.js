@@ -1,14 +1,10 @@
 import React from "react";
 import { ListOfCategories } from "./components/ListOfCategories";
-import { GlobalStyle } from "./globalStyles";
+import { GlobalStyle } from "./GlobalStyles";
 
-function App() {
-  return (
-    <div id="app">
-      <GlobalStyle />
-      <ListOfCategories />
-    </div>
-  );
-}
-
-export default App;
+export const App = () => (
+  <div>
+    <GlobalStyle />
+    <ListOfCategories />
+  </div>
+);
